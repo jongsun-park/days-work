@@ -1,12 +1,14 @@
 import Cursor from "./cursor";
 import { gsap } from "gsap";
-import "./post";
-import "./subscribe";
+import { post } from "./post";
+import { subscribe } from "./subscribe";
 
 const body = document.querySelector("body");
 
 window.onload = () => {
   body.classList.remove("loading");
+  post();
+  subscribe();
   gsap.from(body, {
     opacity: 0,
     duration: 1,

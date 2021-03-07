@@ -1,4 +1,4 @@
-const resize = () => {
+export const post = () => {
   const contents = document.querySelectorAll(".post .content");
 
   contents.forEach((content) => {
@@ -20,5 +20,3 @@ const resize = () => {
     });
   });
 };
-
-resize();
