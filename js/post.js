@@ -3,7 +3,9 @@ export const post = () => {
 
   contents.forEach((content) => {
     const heading = content.querySelector(".content-header h3");
-    content.style.maxWidth = `${heading.textContent.length * 0.4}rem`;
+    // content.style.maxWidth = `${heading.textContent.length * 0.4}rem`;
+    content.style.maxWidth = `${heading.textContent.length * 1}rem`;
+    // console.log(`${heading.textContent.length * 0.4}rem`);
   });
 
   const images = document.querySelectorAll(".post .images");
